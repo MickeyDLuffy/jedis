@@ -10,4 +10,9 @@ class DemoApplicationTests {
 	void contextLoads() {
 	}
 
+	@Test
+	public void testHello() {
+		ExampleRESTEndpoint exampleRESTEndpoint = new ExampleRESTEndpoint();
+		exampleRESTEndpoint.sayHello();
+	}
 }

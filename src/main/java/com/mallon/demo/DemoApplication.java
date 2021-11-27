@@ -1,5 +1,6 @@
 package com.mallon.demo;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.http.MediaType;
@@ -11,6 +12,7 @@ import reactor.core.publisher.Mono;
 @SpringBootApplication
 public class DemoApplication {
 
+
 	public static void main(String[] args) {
 
 
@@ -18,7 +20,7 @@ public class DemoApplication {
 		SpringApplication.run(DemoApplication.class, args);
 		
 		// Example client code to make use of the RESTFul services
-		WebClient webClient = WebClient.builder().baseUrl("http://localhost:8080").defaultHeader("Content-Type", "application/json").build();		
+		WebClient webClient = WebClient.builder().baseUrl("http://localhost:8081").defaultHeader("Content-Type", "application/json").build();
 
 		TransferObject tfObject = new TransferObject(33, "Mike");
 		TransferObject tfObject1 = new TransferObject(32, "Rachel");
