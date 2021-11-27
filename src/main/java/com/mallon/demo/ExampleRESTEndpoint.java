@@ -28,6 +28,11 @@ public class ExampleRESTEndpoint {
 		return repository;
 	}
 	
+	@GetMapping("/hello")
+	public @ResponseBody String sayHello() {
+	  return "This is a hello from mickey! Heroku automatic build done";
+	}
+	
 	@CrossOrigin
 	@RequestMapping(method = {RequestMethod.GET}, path="/example") 
 	public @ResponseBody List<TransferObject> exampleGETEndpoint() {
