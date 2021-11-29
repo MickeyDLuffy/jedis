@@ -50,7 +50,7 @@ public class DemoApplication {
 		 * there will be nothing to retrieve. 
 		 */
 		try {
-			Thread.sleep(300);
+			Thread.sleep(3000);
 		} catch (Exception e) {
 			
 		}
