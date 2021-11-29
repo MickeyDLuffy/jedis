@@ -18,7 +18,7 @@ public class ExampleRESTEndpoint {
 	@RequestMapping(method = {RequestMethod.POST}, path="/example") 
 	public @ResponseBody List<TransferObject> examplePOSTEndpoint(@RequestBody TransferObject sentIn) {
 		
-		System.out.println("POST /example received with object: " + sentIn);
+		System.out.println("POST /example received dfd with object: " + sentIn);
 		this.repository.add(sentIn);
 		
 		return repository;
