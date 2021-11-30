@@ -42,7 +42,7 @@ public class DemoApplication {
 				System.out::println
 			);
 		webClient.post().uri("/example").body(Mono.just(tfObject3), TransferObject.class).retrieve().bodyToFlux(TransferObject.class).subscribe(
-				confirmation-> {System.out.println("Transfer Object Stored!");},
+				confirmation-> {System.out.println("Transferg Object Stored!");},
 				System.out::println
 			);
 		
