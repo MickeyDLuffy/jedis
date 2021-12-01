@@ -22,7 +22,7 @@ public class DemoApplication {
 		// Example client code to make use of the RESTFul services
 		WebClient webClient = WebClient.builder().baseUrl("http://localhost:8081").defaultHeader("Content-Type", "application/json").build();
 
-		TransferObject tfObject = new TransferObject(33, "Mike");
+		TransferObject tfObject = new TransferObject(33, "Miked");
 		TransferObject tfObject1 = new TransferObject(32, "Rachel");
 		TransferObject tfObject2 = new TransferObject(52, "Greg");
 		TransferObject tfObject3 = new TransferObject(43, "Jane");
